@@ -1,0 +1,6 @@
+{
+  "name": "Onyekachi Jeremiah — Frontend & 3D Portfolio",
+  "description": "Interactive 3D portfolio featuring fractured obsidian hero reveals, a WebGL Night Tunnel project gallery, orbital tech sphere, and matching client login portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
