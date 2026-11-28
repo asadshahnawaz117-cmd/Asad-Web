@@ -1,15 +1,15 @@
 import advantagePinterest from '../assets/images/advantage_pinterest.jpg';
 import africartPinterest from '../assets/images/africart_pinterest.jpg';
-import cogitoPinterest from '../assets/images/cogito_pinterest.jpg';
+import myBikesPanigale from '../assets/images/my_bikes_panigale.jpg';
 import fitnovaPinterest from '../assets/images/fitnova_pinterest.jpg';
 import heroPinterestPortrait from '../assets/images/hero_pinterest_portrait.jpg';
-import koraPinterest from '../assets/images/kora_pinterest.jpg';
-import neoscreenPinterest from '../assets/images/neoscreen_pinterest.jpg';
+import asadTravelHero from '../assets/images/asad_travel_hero.jpg';
+import markazDeliveryHero from '../assets/images/markaz_delivery_hero.jpg';
 import nurightPinterest from '../assets/images/nuright_pinterest.jpg';
 import overitePinterest from '../assets/images/overite_pinterest.jpg';
-import powerupPinterest from '../assets/images/powerup_pinterest.jpg';
+import apexMotorsShowroom from '../assets/images/apex_motors_showroom.jpg';
 import urockPinterest from '../assets/images/urock_pinterest.jpg';
-import veraSmartHome from '../assets/images/vera_smart_home_1794832137834.jpg';
+import asadTravelKayak from '../assets/images/asad_travel_kayak.jpg';
 
 export interface ProjectItem {
   id: string;
@@ -31,11 +31,11 @@ export interface ProjectItem {
     | 'advantage'
     | 'fitnova'
     | 'africart'
-    | 'cogito'
-    | 'neoscreen'
-    | 'kora'
-    | 'powerup'
-    | 'vera';
+    | 'bikes'
+    | 'markaz'
+    | 'travel'
+    | 'apex'
+    | 'travel-destinations';
 }
 
 export const SALON_IMAGE_PATH = nurightPinterest;
@@ -148,79 +148,79 @@ export const PROJECTS: ProjectItem[] = [
     themeKind: 'africart',
   },
   {
-    id: 'cogito',
+    id: 'my-bikes',
     number: '08',
-    title: 'Cogito AI Banking',
-    category: 'AI FINTECH · MOBILE & DESKTOP',
-    tagline: 'Intelligent Credit & Automated Cashflow',
+    title: 'My Bikes',
+    category: 'SUPERBIKES · SHOWROOM · INVENTORY',
+    tagline: 'Flagship Motorbike Showroom & Gallery',
     description:
-      'Modern AI-assisted digital banking cockpit displaying instant liquidity balances, automated underwriting rates, and conversational financial diagnostics.',
-    stack: ['REACT', 'TYPESCRIPT', 'AI APIS', 'JWT', 'TAILWIND'],
-    accentHex: '#D4B475',
-    bgHex: '#0D1014',
-    imageUrl: cogitoPinterest,
-    liveUrl: 'https://cogitobank.example.com',
-    themeKind: 'cogito',
+      'Premium imported motorcycle showroom and inventory platform featuring Ducati Panigale V4R, Kawasaki Ninja H2 Carbon, BMW R 1250 GS, and custom superbike galleries with spec filtering.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'SHOWROOM UI', 'VERCEL'],
+    accentHex: '#EF4444',
+    bgHex: '#0D0B0E',
+    imageUrl: myBikesPanigale,
+    liveUrl: 'https://my-bikes-2y7i.vercel.app/',
+    themeKind: 'bikes',
   },
   {
-    id: 'neoscreen',
+    id: 'markaz',
     number: '09',
-    title: 'NeoScreen',
-    category: 'ADTECH · DIGITAL BILLBOARDS',
-    tagline: 'Programmatic Outdoor Billboard Network',
+    title: 'Markaz',
+    category: 'E-COMMERCE · COD · RESELLING',
+    tagline: 'Everything You Love, Delivered Across Pakistan',
     description:
-      'Self-serve DOOH media booking engine enabling brands to preview creative slots on roadside LED billboards across major metro hubs and book impressions live.',
-    stack: ['REACT', 'THREE.JS', 'PAYSTACK', 'LEAFLET', 'TYPESCRIPT'],
-    accentHex: '#A78BFA',
-    bgHex: '#110E1A',
-    imageUrl: neoscreenPinterest,
-    liveUrl: 'https://neoscreen.example.com',
-    themeKind: 'neoscreen',
+      'Nationwide e-commerce and zero-investment reselling marketplace across Pakistan and factory-direct from China featuring Cash on Delivery, 7-day returns, and bilingual English/Urdu storefronts.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'COD CHECKOUT', 'BILINGUAL UI', 'VERCEL'],
+    accentHex: '#22C55E',
+    bgHex: '#0A1E1E',
+    imageUrl: markazDeliveryHero,
+    liveUrl: 'https://everything-you-love-delivered-acros.vercel.app/',
+    themeKind: 'markaz',
   },
   {
-    id: 'kora',
+    id: 'asad-travel',
     number: '10',
-    title: 'Kora Studio',
-    category: 'FASHION · 3D LOOKBOOK',
-    tagline: 'Contemporary Bespoke Apparel Storefront',
+    title: 'Asad Web Site',
+    category: 'TRAVEL · BOOKING · COASTAL EXPLORER',
+    tagline: 'Explore the Whole World and Enjoy Its Beauty',
     description:
-      'Editorial fashion commerce platform pairing fluid Lenis lookbook transitions with instant Paystack checkout and automated Shipbubble doorstep courier dispatch.',
-    stack: ['REACT', 'LENIS', 'PAYSTACK', 'SHIPBUBBLE', 'TAILWIND'],
-    accentHex: '#E5C687',
-    bgHex: '#161310',
-    imageUrl: koraPinterest,
-    liveUrl: 'https://korastudio.example.com',
-    themeKind: 'kora',
+      'Curated global travel, hostelry, flights, and coastal adventure booking platform featuring multi-mode destination search across Bali, Tokyo, Amalfi, Mindanao, and Venice.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'BOOKING UI', 'TRAVEL API', 'VERCEL'],
+    accentHex: '#1496D4',
+    bgHex: '#091522',
+    imageUrl: asadTravelHero,
+    liveUrl: 'https://asad-web-site.vercel.app/',
+    themeKind: 'travel',
   },
   {
-    id: 'powerup',
+    id: 'apex-motors',
     number: '11',
-    title: 'PowerUp',
-    category: 'FINTECH · ELECTRICITY PAYMENTS',
-    tagline: 'Instant Utility & Smart Meter Top-Ups',
+    title: 'Apex Motors & Customs',
+    category: 'AUTOMOTIVE · 4X4 SHOWROOM & FLEET',
+    tagline: 'Elite Showroom, Custom 4x4 Builds & VIP Fleet',
     description:
-      'Zero-friction prepaid electricity token platform with real-time tariff forecasting, meter number verification, and instant digital token delivery.',
-    stack: ['REACT', 'PWA', 'PAYSTACK', 'TYPESCRIPT', 'JWT'],
+      'Elite automotive showroom, custom 4x4 modification studio, and luxury vehicle rental platform featuring Land Cruiser Prado, Hilux Revo Rocco, Fortuner Legender, and Civic RS Turbo across Lahore, Islamabad, and Multan.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'SUPABASE', 'SHOWROOM UI', 'VERCEL'],
     accentHex: '#F59E0B',
-    bgHex: '#12100B',
-    imageUrl: powerupPinterest,
-    liveUrl: 'https://powerup.example.com',
-    themeKind: 'powerup',
+    bgHex: '#0F1117',
+    imageUrl: apexMotorsShowroom,
+    liveUrl: 'https://elite-showroom-custom-4x4-builds-vi.vercel.app/',
+    themeKind: 'apex',
   },
   {
-    id: 'vera',
+    id: 'asad-travel-destinations',
     number: '12',
-    title: 'Vera',
-    category: 'IOT · SMART HOME',
-    tagline: 'Good Morning, Asad — Connected Living',
+    title: 'Asad Web Site · Escapes',
+    category: 'TRAVEL · ISLANDS · DESTINATIONS',
+    tagline: 'Find and Write About Your Adventures Worldwide',
     description:
-      'Low-latency IoT home telemetry hub controlling room climate, lighting circuits, and solar load balancing with real-time kWh consumption telemetry.',
-    stack: ['REACT', 'TYPESCRIPT', 'IOT API', 'TAILWIND', 'PWA'],
-    accentHex: '#3B82F6',
+      'Interactive coastal destination guide and booking showcase on Asad Web Site featuring Amalfi Coast, SC. Mindanau, Disneyland Tokyo, and Tausand Island with real-time trip filtering.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'TRAVEL UI', 'VERCEL'],
+    accentHex: '#0E7DB4',
     bgHex: '#F6F8FB',
-    imageUrl: veraSmartHome,
-    liveUrl: 'https://vera.example.com',
-    themeKind: 'vera',
+    imageUrl: asadTravelKayak,
+    liveUrl: 'https://asad-web-site.vercel.app/',
+    themeKind: 'travel-destinations',
   },
 ];
 
@@ -244,26 +244,25 @@ export function drawProjectPreviewCanvas(
   ctx.fillStyle = project.bgHex;
   ctx.fillRect(0, 0, w, h);
 
-  const isLightTheme = project.themeKind === 'vera';
+  const isLightTheme = project.themeKind === 'travel-destinations';
 
   // Draw the project photo across the main stage (below top chrome bar)
   const topBarH = 54;
   const bottomBarH = 58;
   const stageH = h - topBarH - bottomBarH;
 
-  const isFullPageUi =
-    project.themeKind === 'neoscreen' ||
-    project.themeKind === 'kora' ||
-    project.themeKind === 'powerup';
+  const isFullPageUi = false;
 
   const isPortraitShowcase =
+    project.themeKind === 'asad' ||
     project.themeKind === 'nuright' ||
     project.themeKind === 'overite' ||
     project.themeKind === 'urock' ||
     project.themeKind === 'advantage' ||
     project.themeKind === 'fitnova' ||
     project.themeKind === 'africart' ||
-    project.themeKind === 'cogito';
+    project.themeKind === 'bikes' ||
+    project.themeKind === 'markaz';
 
   if (loadedImage && loadedImage.complete && loadedImage.naturalWidth > 0) {
     const imgAspect = loadedImage.naturalWidth / loadedImage.naturalHeight;
@@ -278,7 +277,7 @@ export function drawProjectPreviewCanvas(
       ctx.fillRect(0, topBarH, w, stageH);
 
       const frameH = stageH - 32;
-      const frameW = project.themeKind === 'advantage' ? 464 : 416;
+      const frameW = project.themeKind === 'advantage' || project.themeKind === 'markaz' ? 464 : 416;
       const frameX = w - frameW - 30;
       const frameY = topBarH + 16;
 
@@ -291,14 +290,21 @@ export function drawProjectPreviewCanvas(
         const drawX = frameX + (frameW - size) / 2;
         const drawY = frameY + (frameH - size) / 2;
         ctx.drawImage(loadedImage, drawX, drawY, size, size);
+      } else if (imgAspect > frameW / frameH) {
+        const drawH = frameH;
+        const drawW = frameH * imgAspect;
+        const drawX = frameX + (frameW - drawW) * 0.5;
+        const drawY = frameY;
+        ctx.drawImage(loadedImage, drawX, drawY, drawW, drawH);
       } else {
         // Fit width cleanly and bias vertical framing near top so full head & face remain crisp
         const drawW = frameW;
         const drawH = frameW / imgAspect;
         const drawX = frameX;
+        const verticalBias = project.themeKind === 'bikes' ? 0.5 : 0.06;
         const drawY =
           drawH >= frameH
-            ? frameY + (frameH - drawH) * 0.06
+            ? frameY + (frameH - drawH) * verticalBias
             : frameY + (frameH - drawH) * 0.5;
         ctx.drawImage(loadedImage, drawX, drawY, drawW, drawH);
       }
@@ -403,14 +409,14 @@ export function drawProjectPreviewCanvas(
 
   if (project.themeKind === 'asad') {
     ctx.fillStyle = '#F7F3EA';
-    ctx.font = '500 54px "Cormorant Garamond", Georgia, serif';
-    ctx.fillText('Modern Web Apps', 56, 206);
+    ctx.font = '500 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('Modern Web Apps', 56, 202);
     ctx.fillStyle = '#E5C687';
-    ctx.font = 'italic 500 54px "Cormorant Garamond", Georgia, serif';
-    ctx.fillText('Built to Win Clients', 56, 268);
+    ctx.font = 'italic 500 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('Built to Win Clients', 56, 256);
     ctx.fillStyle = 'rgba(247,243,234,0.88)';
-    ctx.font = '400 17px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('Fast, responsive websites & interactive 3D builds for growing brands.', 56, 316);
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'Fast, responsive websites & interactive 3D builds for growing brands.', 56, 302, leftMaxW, 24);
   } else if (project.themeKind === 'nuright') {
     ctx.fillStyle = '#F7F3EA';
     ctx.font = '500 48px "Cormorant Garamond", Georgia, serif';
@@ -444,23 +450,54 @@ export function drawProjectPreviewCanvas(
     ctx.fillStyle = 'rgba(244,240,232,0.84)';
     ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
     drawWrappedText(ctx, 'Dedicated clinical care & patient coordination across 14 counties.', 56, 300, leftMaxW - 20, 24);
-  } else if (project.themeKind === 'cogito') {
-    ctx.fillStyle = '#F4F0E8';
+  } else if (project.themeKind === 'bikes') {
+    ctx.fillStyle = '#F8FAFC';
     ctx.font = '700 44px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('₦350,000.00', 56, 202);
-    ctx.fillStyle = '#D4B475';
-    ctx.font = '600 21px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('Home Loan Special · 5.5% AI Rate', 56, 250);
-    ctx.fillStyle = 'rgba(244,240,232,0.82)';
+    ctx.fillText('EXCLUSIVE', 56, 200);
+    ctx.fillStyle = '#EF4444';
+    ctx.fillText('SHOWROOM', 56, 254);
+    ctx.fillStyle = 'rgba(248,250,252,0.86)';
     ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
-    drawWrappedText(ctx, 'Instant treasury yield & automated credit underwriting.', 56, 294, leftMaxW, 24);
-  } else if (project.themeKind === 'vera') {
+    drawWrappedText(ctx, 'Ducati Panigale V4R, Ninja H2 Carbon & imported superbikes.', 56, 300, leftMaxW - 20, 24);
+  } else if (project.themeKind === 'markaz') {
+    ctx.fillStyle = '#F8FAFC';
+    ctx.font = '700 42px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('Everything You', 56, 200);
+    ctx.fillStyle = '#4ADE80';
+    ctx.fillText('Love, Delivered.', 56, 254);
+    ctx.fillStyle = 'rgba(248,250,252,0.86)';
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'Cash on delivery, 7-day returns & factory-direct deals across Pakistan.', 56, 300, leftMaxW - 20, 24);
+  } else if (project.themeKind === 'travel') {
+    ctx.fillStyle = '#F8FAFC';
+    ctx.font = '600 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('Explore the', 56, 202);
+    ctx.fillStyle = '#38BDF8';
+    ctx.font = 'italic 600 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('Whole World', 56, 256);
+    ctx.fillStyle = 'rgba(248,250,252,0.88)';
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'Curated coastal stays, flights & destination guides worldwide.', 56, 302, leftMaxW - 80, 24);
+  } else if (project.themeKind === 'apex') {
+    ctx.fillStyle = '#F8FAFC';
+    ctx.font = '600 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('Elite 4x4 Builds', 56, 202);
+    ctx.fillStyle = '#F59E0B';
+    ctx.font = 'italic 600 46px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('& Luxury Showroom', 56, 256);
+    ctx.fillStyle = 'rgba(248,250,252,0.88)';
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'Land Cruiser Prado, Hilux Revo Rocco & VIP fleet rentals.', 56, 302, leftMaxW - 80, 24);
+  } else if (project.themeKind === 'travel-destinations') {
     ctx.fillStyle = '#0F172A';
     ctx.font = '700 46px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('Good Morning, Asad', 56, 204);
-    ctx.fillStyle = '#2563EB';
-    ctx.font = '600 16px "JetBrains Mono", monospace';
-    ctx.fillText('22°C INDOOR  ·  4.8 kWh SOLAR  ·  ALL CIRCUITS OPTIMAL', 56, 252);
+    ctx.fillText('Explore & Book', 56, 204);
+    ctx.fillStyle = '#0E7DB4';
+    ctx.font = '600 15px "JetBrains Mono", monospace';
+    ctx.fillText('ISLANDS  ·  COASTS  ·  FLIGHTS  ·  HOTELS', 56, 252);
+    ctx.fillStyle = 'rgba(15,23,42,0.78)';
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'Bali, Amalfi Coast & global coastal escapes on Asad Web Site.', 56, 294, leftMaxW - 80, 24);
   } else {
     ctx.fillStyle = '#F4F0E8';
     ctx.font = isPortraitShowcase ? '600 46px "Cormorant Garamond", Georgia, serif' : '600 54px "Cormorant Garamond", Georgia, serif';

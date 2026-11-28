@@ -160,10 +160,10 @@ export function ProjectModal({
             <a
               href={project.liveUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 font-mono-tech text-[11px] tracking-[0.14em] text-[#D4B475] transition-colors hover:text-[#F4F0E8]"
             >
-              <span>CASE ARCHIVE</span>
+              <span>{project.liveUrl.includes('.example.com') ? 'CASE ARCHIVE' : 'VISIT LIVE SITE'}</span>
               <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </div>

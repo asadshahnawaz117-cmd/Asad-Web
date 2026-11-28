@@ -508,16 +508,29 @@ export function NightTunnelSection({
               </p>
             </div>
 
-            <button
-              type="button"
-              onClick={() => onSelectProject(currentProject)}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#141417] py-1.5 pl-4 pr-1.5 text-[11px] font-semibold text-[#F4F0E8] transition-transform hover:scale-[1.03] dark:bg-[#F4F0E8] dark:text-[#070709] whitespace-nowrap shrink-0"
-            >
-              <span>OPEN</span>
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D4B475] text-[#070709]">
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </span>
-            </button>
+            <div className="flex items-center gap-1.5 shrink-0">
+              {!currentProject.liveUrl.includes('.example.com') && (
+                <a
+                  href={currentProject.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[#D4B475]/50 bg-[#D4B475]/15 px-3.5 py-2 text-[11px] font-semibold text-[#8A6D35] transition-colors hover:bg-[#D4B475] hover:text-[#070709] dark:text-[#D4B475] dark:hover:text-[#070709] whitespace-nowrap"
+                >
+                  <span>LIVE</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+              )}
+              <button
+                type="button"
+                onClick={() => onSelectProject(currentProject)}
+                className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#141417] py-1.5 pl-4 pr-1.5 text-[11px] font-semibold text-[#F4F0E8] transition-transform hover:scale-[1.03] dark:bg-[#F4F0E8] dark:text-[#070709] whitespace-nowrap shrink-0"
+              >
+                <span>OPEN</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D4B475] text-[#070709]">
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </span>
+              </button>
+            </div>
           </div>
 
           {/* Subtle Tunnel Progress Dots */}
