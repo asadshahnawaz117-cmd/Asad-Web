@@ -1,5 +1,5 @@
 import advantagePinterest from '../assets/images/advantage_pinterest.jpg';
-import africartPinterest from '../assets/images/africart_pinterest.jpg';
+import fsdAsadTeam from '../assets/images/fsd_asad_team.png';
 import myBikesPanigale from '../assets/images/my_bikes_panigale.jpg';
 import fitnovaPinterest from '../assets/images/fitnova_pinterest.jpg';
 import heroPinterestPortrait from '../assets/images/hero_pinterest_portrait.jpg';
@@ -30,7 +30,7 @@ export interface ProjectItem {
     | 'urock'
     | 'advantage'
     | 'fitnova'
-    | 'africart'
+    | 'fsd'
     | 'bikes'
     | 'markaz'
     | 'travel'
@@ -133,19 +133,19 @@ export const PROJECTS: ProjectItem[] = [
     themeKind: 'fitnova',
   },
   {
-    id: 'africart',
+    id: 'fsd-web-studio',
     number: '07',
-    title: 'AfriCart Logistics',
-    category: 'LOGISTICS · FLEET · API',
-    tagline: 'Automated Last-Mile Dispatch Across Lagos',
+    title: 'FSD Web Studio',
+    category: 'AGENCY · WEB STUDIO · TEAM',
+    tagline: 'Building Digital Futures — Meet Our Studio Team',
     description:
-      'Live fleet command interface integrating Shipbubble webhooks, rider GPS corridors via Leaflet, and instant merchant checkout rate calculators.',
-    stack: ['REACT', 'LEAFLET', 'SHIPBUBBLE', 'PAYSTACK', 'MYSQL', 'PHP'],
-    accentHex: '#38BDF8',
-    bgHex: '#0B1319',
-    imageUrl: africartPinterest,
-    liveUrl: 'https://africart.example.com',
-    themeKind: 'africart',
+      'Digital agency and web development studio crafting modern websites, e-commerce platforms, UI/UX systems, and custom React applications — featuring M. Asad on the core frontend engineering team.',
+    stack: ['REACT', 'TYPESCRIPT', 'TAILWIND', 'UI/UX', 'SEO', 'VERCEL'],
+    accentHex: '#B9F6CA',
+    bgHex: '#101B16',
+    imageUrl: fsdAsadTeam,
+    liveUrl: 'https://fsdwebstudio117-nine.vercel.app/#team',
+    themeKind: 'fsd',
   },
   {
     id: 'my-bikes',
@@ -260,7 +260,7 @@ export function drawProjectPreviewCanvas(
     project.themeKind === 'urock' ||
     project.themeKind === 'advantage' ||
     project.themeKind === 'fitnova' ||
-    project.themeKind === 'africart' ||
+    project.themeKind === 'fsd' ||
     project.themeKind === 'bikes' ||
     project.themeKind === 'markaz';
 
@@ -285,6 +285,15 @@ export function drawProjectPreviewCanvas(
       roundRect(ctx, frameX, frameY, frameW, frameH, 18);
       ctx.clip();
 
+      if (project.themeKind === 'fsd') {
+        const cardBg = ctx.createLinearGradient(frameX, frameY, frameX, frameY + frameH);
+        cardBg.addColorStop(0, '#1D3329');
+        cardBg.addColorStop(0.55, '#13221B');
+        cardBg.addColorStop(1, '#0C1611');
+        ctx.fillStyle = cardBg;
+        ctx.fillRect(frameX, frameY, frameW, frameH);
+      }
+
       if (project.themeKind === 'advantage') {
         const size = Math.min(frameW, frameH);
         const drawX = frameX + (frameW - size) / 2;
@@ -301,7 +310,7 @@ export function drawProjectPreviewCanvas(
         const drawW = frameW;
         const drawH = frameW / imgAspect;
         const drawX = frameX;
-        const verticalBias = project.themeKind === 'bikes' ? 0.5 : 0.06;
+        const verticalBias = project.themeKind === 'bikes' ? 0.5 : 0.04;
         const drawY =
           drawH >= frameH
             ? frameY + (frameH - drawH) * verticalBias
@@ -450,6 +459,15 @@ export function drawProjectPreviewCanvas(
     ctx.fillStyle = 'rgba(244,240,232,0.84)';
     ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
     drawWrappedText(ctx, 'Dedicated clinical care & patient coordination across 14 counties.', 56, 300, leftMaxW - 20, 24);
+  } else if (project.themeKind === 'fsd') {
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '700 44px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('Building Digital', 56, 200);
+    ctx.fillStyle = '#B9F6CA';
+    ctx.fillText('Futures.', 56, 254);
+    ctx.fillStyle = 'rgba(255,255,255,0.84)';
+    ctx.font = '400 16px "Plus Jakarta Sans", sans-serif';
+    drawWrappedText(ctx, 'FSD Web Studio team crafting fast websites, e-commerce & custom apps.', 56, 300, leftMaxW - 20, 24);
   } else if (project.themeKind === 'bikes') {
     ctx.fillStyle = '#F8FAFC';
     ctx.font = '700 44px "Plus Jakarta Sans", sans-serif';
